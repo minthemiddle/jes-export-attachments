@@ -13,7 +13,8 @@ for i in range(0,len(all_receipts)):
 
     try:
         receipt_attachment_filename = receipt_attachment['filename']
-        receipt_attachment_new_filename = receipt_number+'.jpg'
+        filetype = receipt_attachment_filename[-3:]
+        receipt_attachment_new_filename = receipt_number+'.'+filetype
         rename(receipt_attachment_filename, receipt_attachment_new_filename)
 
     except KeyError:

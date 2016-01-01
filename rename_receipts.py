@@ -7,7 +7,6 @@ root = tree.getroot()
 all_receipts = root[4]
 
 for i in range(0,len(all_receipts)):
-#for i in range(0,1):
     receipt_number = all_receipts[i][0].text
     receipt_attachment = all_receipts[i][4].attrib
 

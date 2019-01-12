@@ -1,4 +1,4 @@
-# Rename attachments
+# Export attachments from JES
 
 ## Use Case
 
